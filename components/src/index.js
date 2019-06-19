@@ -1,52 +1,39 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import faker from "faker";
+import CommentDetail from "./CommentDetail";
+import ApprovalCard from "./ApprovalCard";
 
 const App = () => {
   return (
     <div className='ui container comments'>
-      <div className='comment'>
-        <a href='/' className='avatar'>
-          <img alt='avatar' src={faker.image.avatar()} />
-        </a>
-        <div className='content'>
-          <a href='/' className='author'>
-            Derek G.
-          </a>
-          <div className='metadata'>
-            <span className='date'>Today at 4:20pm</span>
-          </div>
-          <div className='text'>Yo, fuck this Daniel Wise kid. Straight trash.</div>
-        </div>
-      </div>
-      <div className='comment'>
-        <a href='/' className='avatar'>
-          <img alt='avatar' src={faker.image.avatar()} />
-        </a>
-        <div className='content'>
-          <a href='/' className='author'>
-            John F.
-          </a>
-          <div className='metadata'>
-            <span className='date'>Today at 6:04pm</span>
-          </div>
-          <div className='text'>Heard he can't get past the buttcheeks. Probz true no DOUBT</div>
-        </div>
-      </div>
-      <div className='comment'>
-        <a href='/' className='avatar'>
-          <img alt='avatar' src={faker.image.avatar()} />
-        </a>
-        <div className='content'>
-          <a href='/' className='author'>
-            Lucas T.
-          </a>
-          <div className='metadata'>
-            <span className='date'>Today at 6:69pm</span>
-          </div>
-          <div className='text'>Worst part is... I heard he doesn't even burn bro...</div>
-        </div>
-      </div>
+      <ApprovalCard>
+        <CommentDetail
+          author={faker.name.firstName()}
+          avatar={faker.image.avatar()}
+          time='96:69pm'
+          date={faker.date.weekday()}
+          content={faker.lorem.sentence()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author={faker.name.firstName()}
+          avatar={faker.image.avatar()}
+          time='4:20pm'
+          date={faker.date.weekday()}
+          content={faker.lorem.sentence()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author={faker.name.firstName()}
+          avatar={faker.image.avatar()}
+          time='6:21pm'
+          date={faker.date.weekday()}
+          content={faker.lorem.sentence()}
+        />
+      </ApprovalCard>
     </div>
   );
 };
