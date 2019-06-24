@@ -1,0 +1,12 @@
+.error-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: crimson;
+  background-color: rgb(233, 210, 107);
+}
+
+.allPage {
+  border: 10px solid red;
+}
