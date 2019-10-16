@@ -1,4 +1,5 @@
 import React from "react";
+import "./ImageList.css";
 
 class SearchBar extends React.Component {
   state = { term: "" };
@@ -13,12 +14,12 @@ class SearchBar extends React.Component {
       <div className='ui segment'>
         <form onSubmit= {this.onFormSubmit} className='ui form'>
           <div className='field'>
-            <label>IMAGE SEARCH</label>
+            <label>Logan's Image Search</label>
             <input
               type= 'text'
               value= {this.state.term}
               onChange= {e => this.setState({ term: e.target.value })}
-              placeholder= "Type here"
+              placeholder= "Type here..."
             />
           </div>
         </form>
