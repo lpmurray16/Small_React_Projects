@@ -29,14 +29,17 @@ class App extends React.Component {
 
   render() {
     return (
+      
       <div className="ui container">
+        <h1 class="page_header">A Simple Video Search Tools</h1>
+        <h2 class="sub_header">Using YouTube Data API v3</h2>
         <SearchBar onFormSubmit={this.onInputSubmit} />
         <div className="ui grid">
-          <div className="ui row">
-            <div className="eleven wide column">
+          <div className="flex-row">
+            <div className="flex-col-70">
               <VideoDetail video={this.state.selectedVideo} />
             </div>
-            <div className="five wide column">
+            <div className="flex-col-30">
               <VideoList
                 videos={this.state.videos}
                 onVideoSelect={this.onVideoSelect}

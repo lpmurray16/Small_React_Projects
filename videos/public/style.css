@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    background-color: #dedede;
+    height: 100vh;
+}
+
+body * {
+    font-family: Sora, sans-serif;
+}
+#root {
+    height: 100vh;
+}
+
+.page_header {
+    text-align: center;
+    margin: 0;
+}
+
+.sub_header {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-col-70 {
+    width: 70%;
+}
+
+.flex-col-30 {
+    width: 30%;
+    padding: 8px;
+}
+
+@media (max-width: 767px){
+    .flex-col-70, .flex-col-30 {
+        width: 100%;
+        padding: 8px;
+    }
+}

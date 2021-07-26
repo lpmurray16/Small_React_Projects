@@ -5,7 +5,7 @@ const VideoDetail = ({ video }) => {
   if(!video){
     return (
     <div>
-      <h1>Go ahead and search then pick a video, dumbass.</h1>
+      <h3>Just start typing, then choose a video.</h3>
     </div>);
   }
 
