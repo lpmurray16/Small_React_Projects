@@ -11,6 +11,10 @@ const items = [
     {
         title: 'What is Harry Potters middle name?',
         content: 'James, like his fathers first name.'
+    },
+    {
+        title: 'What is the name of the Crouch family house-elf?',
+        content: 'Winky! She was a semi-important character in the books, but completely left out of the movie.'
     }
 ];
 
