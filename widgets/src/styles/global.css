@@ -1,3 +1,38 @@
 #root {
     margin: 1em;
 }
+h1.title_top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Henny Penny', cursive;
+    color:rgb(204, 163, 27);
+    text-shadow: 1px 1px 1px #000;
+}
+.accordion .title.active {
+    transition: all 800ms ease;
+}
+.accordion .content.active {
+    transition: all 800ms ease;
+}
+.title {
+    background-color: rgb(112, 29, 29);
+}
+.title:hover {
+    background-color: rgb(199, 162, 42) !important;
+}
+.active {
+    background-color: rgb(100, 238, 82);
+}
+.title.active {
+    background-color: rgb(103, 214, 88) !important;
+}
+.ui.styled.accordion .accordion .title, .ui.styled.accordion .title {
+    margin: 0;
+    padding: .75em 1em;
+    color: rgb(255 255 255);
+    font-weight: 700;
+    border-top: 1px solid rgba(34,36,38,.15);
+    -webkit-transition: background .1s ease,color .1s ease;
+    transition: background .1s ease,color .1s ease;
+}
