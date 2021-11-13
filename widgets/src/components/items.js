@@ -2,7 +2,7 @@
 const items = [
     {
         title: 'How many points is the Snitch worth if caught?',
-        content: '200 points and the match is over! Of course that doesn\'t always mean that team wins.'
+        content: '150 points and the match is over! Of course that doesn\'t always mean that team wins.'
     },
     {
         title: 'What is the name of the popular pub in Hogsmeade?',
@@ -15,6 +15,10 @@ const items = [
     {
         title: 'What is the name of the Crouch family house-elf?',
         content: 'Winky! She was a semi-important character in the books, but completely left out of the movie.'
+    },
+    {
+        title: 'Which Hogwarts Professor was actually a talented Quidditch player back in the day?',
+        content: 'Minerva McGonagall! Though it doesn\'t mention what position she played.'
     }
 ];
 
