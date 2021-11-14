@@ -1,5 +1,10 @@
+:root {
+    --gold: #e9b332;
+}
 #root {
     margin: 1em;
+    display: grid;
+    place-items: center;
 }
 body {
     background-color: #333;
@@ -9,7 +14,7 @@ h1.title_top {
     justify-content: flex-start;
     align-items: center;
     font-family: 'Henny Penny', cursive;
-    color:rgb(204, 163, 27);
+    color:var(--gold);
     text-shadow: 1px 1px 1px #000;
 }
 .accordion .title.active {
@@ -22,7 +27,7 @@ h1.title_top {
     background-color: rgb(112, 29, 29);
 }
 .title:hover {
-    background-color: rgb(199, 162, 42) !important;
+    background-color: var(--gold) !important;
 }
 .active {
     background-color: rgb(100, 238, 82);
@@ -36,6 +41,6 @@ h1.title_top {
     color: rgb(255 255 255);
     font-weight: 700;
     border-top: 1px solid rgba(34,36,38,.15);
-    -webkit-transition: background .1s ease,color .1s ease;
-    transition: background .1s ease,color .1s ease;
+    -webkit-transition: all .1s ease;
+    transition: all .1s ease;
 }
