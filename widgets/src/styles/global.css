@@ -44,3 +44,27 @@ h1.title_top {
     -webkit-transition: all .1s ease;
     transition: all .1s ease;
 }
+.color-white {
+    color: #fffffe !important;
+}
+.extra-room {
+    padding: 1em !important;
+}
+.wider {
+    width: 90%;
+    margin: 0 auto;
+}
+.color-blue {
+    color: #253bff !important;
+}
+.color-blue:hover {
+    text-decoration: underline #253bff;
+}
+.color-blue:visited {
+    color: rgb(107, 28, 107) !important;
+}
+.bg-white {
+    background-color: #fffffe !important;
+    border-radius: 4px !important;
+}
+
