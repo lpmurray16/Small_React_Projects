@@ -31,11 +31,14 @@ export default () => {
             {/* <Search/> */}
             <button className = "ui button" onClick={() => setShowDropdown(!showDropdown)}>Toggle Dropdown</button>
             {showDropdown ? (
+                <div>
                 <Dropdown 
                     selected={selected}
                     onSelectedChange={setSelected} 
                     options= { options }
                 />
+                <p className="dropdown-text" style={{color: selected.value}}>The text is {selected.value}</p>
+                </div>
                 ) : null
             }
             
