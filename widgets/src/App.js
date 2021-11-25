@@ -22,17 +22,23 @@ const options = [
 
 export default () => {
     const [selected, setSelected] = useState(options[0]);
+    const [showDropdown, setShowDropdown] = useState(true);
 
     return (
         <div className = "accordion wider">
             {/* <h1 className = "title_top"><img src="harrypotter_title.png" alt="something"/>Trivia</h1> */}
             {/* <Accordion items={items}/> */}
             {/* <Search/> */}
-            <Dropdown 
-                selected={selected}
-                onSelectedChange={setSelected} 
-                options= { options }
-            />
+            <button className = "ui button" onClick={() => setShowDropdown(!showDropdown)}>Toggle Dropdown</button>
+            {showDropdown ? (
+                <Dropdown 
+                    selected={selected}
+                    onSelectedChange={setSelected} 
+                    options= { options }
+                />
+                ) : null
+            }
+            
         </div>
     );
 };
