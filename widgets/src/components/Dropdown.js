@@ -40,9 +40,9 @@ const Dropdown = ({ options, selected, onSelectedChange }) => {
   });
 
   return (
-    <div ref={ref} className="ui form">
-      <div className="feild">
-        <label className="label">Select a color:</label>
+    <div ref={ref} className="ui form top-bottom">
+      <div className="feild col">
+        <label className="label color-white">Select a color:</label>
         <div
           onClick={() => {
             setOpen(!open);

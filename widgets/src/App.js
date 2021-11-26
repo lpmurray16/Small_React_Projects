@@ -25,7 +25,7 @@ export default () => {
     const [showDropdown, setShowDropdown] = useState(true);
 
     return (
-        <div className = "accordion wider">
+        <div className = "accordion wider flex-center col">
             {/* <h1 className = "title_top"><img src="harrypotter_title.png" alt="something"/>Trivia</h1> */}
             {/* <Accordion items={items}/> */}
             {/* <Search/> */}
