@@ -1,4 +1,5 @@
 
+// An array of objects for the Accordion component
 const items = [
     {
         title: 'How many Weasley children are there?',
@@ -6,7 +7,7 @@ const items = [
     },
     {
         title: 'Where did the Weasleys vacation before the start of the third term?',
-        content: 'Egypt, and in the family photo is the ONLY time we see Charle, the oldest.'
+        content: 'Egypt, and in the family photo is the ONLY time we see Charlie, the oldest.'
     },
     {
         title: 'What floor can the Gryffindor Common Room AND Dumbledore\'s office be found on?',
