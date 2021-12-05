@@ -60,6 +60,7 @@ export default () => {
     const [path, setPath] = useState("/");
 
     // final JSX returned from App.js which includes and uses all components within this application.
+    // displayed through Routing without React Router
     return (
         <div className="wider flex-center col">
             <Header />
