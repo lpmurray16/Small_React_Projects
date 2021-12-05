@@ -7,6 +7,11 @@ import React from "react";
 
 const Link = ({ className, href, children }) => {
     const onClick = (event) => {
+        //  will open in new tab and navigate to the href
+        if (event.metaKey || event.ctrlKey) {
+            return;
+        }
+
         // prevents the on click event from triggering its default action,
         // which in this case is a request and reload of the browser
         // we are trying to avoid a request

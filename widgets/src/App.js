@@ -7,20 +7,19 @@ import Translate from "./components/Translate";
 import Route from "./components/Route";
 import Header from "./components/Header";
 
-
 const options = [
-  {
-    label: "The color red",
-    value: "red",
-  },
-  {
-    label: "The color green",
-    value: "green",
-  },
-  {
-    label: "The color blue",
-    value: "blue",
-  },
+    {
+        label: "The color red",
+        value: "red",
+    },
+    {
+        label: "The color green",
+        value: "green",
+    },
+    {
+        label: "The color blue",
+        value: "blue",
+    },
 ];
 
 // {{{{{{{ UNUSED, very basic way of implementing routing }}}}}}}
@@ -53,46 +52,51 @@ const options = [
 // };
 
 export default () => {
-  // both of these state variables are used in Dropdown
-  const [selected, setSelected] = useState(options[0]);
-  const [showDropdown, setShowDropdown] = useState(true);
-  
-  // this is our state variable to handle routing
-  const [path, setPath] = useState("/");
+    // both of these state variables are used in Dropdown
+    const [selected, setSelected] = useState(options[0]);
+    const [showDropdown, setShowDropdown] = useState(true);
 
-  // final JSX returned from App.js which includes and uses all components within this application.
-  return (
-    <div className="accordion wider flex-center col">
-      <Header />
-      <Route path="/">
-        <Accordion items={items} />
-      </Route>
-      <Route path="/dropdown">
-        <button
-          className="ui button"
-          onClick={() => setShowDropdown(!showDropdown)}
-        >
-          Toggle Dropdown
-        </button>
-        {showDropdown ? (
-          <div>
-            <Dropdown
-              selected={selected}
-              onSelectedChange={setSelected}
-              options={options}
-            />
-            <p className="dropdown-text" style={{ color: selected.value }}>
-              The text is {selected.value}
-            </p>
-          </div>
-        ) : null}
-      </Route>
-      <Route path="/search">
-        <Search />
-      </Route>
-      <Route path="/translate">
-        <Translate />
-      </Route>
-    </div>
-  );
+    // this is our state variable to handle routing
+    const [path, setPath] = useState("/");
+
+    // final JSX returned from App.js which includes and uses all components within this application.
+    return (
+        <div className="wider flex-center col">
+            <Header />
+            <Route path="/">
+                <Accordion items={items} />
+            </Route>
+            <Route path="/dropdown">
+                <div className="cover_container">
+                    <button
+                        className="ui button full"
+                        onClick={() => setShowDropdown(!showDropdown)}
+                    >
+                        Toggle Dropdown
+                    </button>
+                    {showDropdown ? (
+                        <div>
+                            <Dropdown
+                                selected={selected}
+                                onSelectedChange={setSelected}
+                                options={options}
+                            />
+                            <p
+                                className="dropdown-text"
+                                style={{ color: selected.value }}
+                            >
+                                The text is {selected.value}
+                            </p>
+                        </div>
+                    ) : null}
+                </div>
+            </Route>
+            <Route path="/search">
+                <Search />
+            </Route>
+            <Route path="/translate">
+                <Translate />
+            </Route>
+        </div>
+    );
 };

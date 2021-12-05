@@ -41,7 +41,7 @@ const Accordion = ({ items }) => {
 
     // final returned JSX div for Accordion component, uses renderedItems from above.
     return (
-        <div>
+        <div className="cover_container">
             <h1 className = "title_top"><img src="harrypotter_title.png" alt="Harry Potter Movie Title Graphic"/>Trivia</h1>
             <div className="ui styled accordion">
                 {renderedItems}

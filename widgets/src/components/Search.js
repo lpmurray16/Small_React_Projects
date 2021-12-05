@@ -80,7 +80,7 @@ const Search = () => {
 
     // the final returned JSX, 
     return (
-        <div className="wider">
+        <div className="wider cover_container">
             <div className = "ui form">
                 <div className = "field">
                     <label className = "color-white">Enter Search Term</label>

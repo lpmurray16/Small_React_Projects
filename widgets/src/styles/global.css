@@ -1,5 +1,6 @@
 :root {
     --gold: #e9b332;
+    --dark-red: #701d1d;
 }
 #root {
     margin: 1em;
@@ -7,15 +8,22 @@
     place-items: center;
 }
 body {
-    background-color: #333;
+    background: url("/blob-scene.svg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+img {
+    max-width: 100%;
 }
 h1.title_top {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-family: 'Henny Penny', cursive;
-    color:var(--gold);
+    font-family: "Henny Penny", cursive;
+    color: var(--gold);
     text-shadow: 1px 1px 1px #000;
+    max-width: 100%;
 }
 .accordion .title.active {
     transition: all 800ms ease;
@@ -24,7 +32,7 @@ h1.title_top {
     transition: all 800ms ease;
 }
 .title {
-    background-color: rgb(112, 29, 29);
+    background-color: var(--dark-red);
 }
 .title:hover {
     background-color: var(--gold) !important;
@@ -35,14 +43,15 @@ h1.title_top {
 .title.active {
     background-color: rgb(103, 214, 88) !important;
 }
-.ui.styled.accordion .accordion .title, .ui.styled.accordion .title {
+.ui.styled.accordion .accordion .title,
+.ui.styled.accordion .title {
     margin: 0;
-    padding: .75em 1em;
+    padding: 0.75em 1em;
     color: rgb(255 255 255);
     font-weight: 700;
-    border-top: 1px solid rgba(34,36,38,.15);
-    -webkit-transition: all .1s ease;
-    transition: all .1s ease;
+    border-top: 1px solid rgba(34, 36, 38, 0.15);
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
 }
 .color-white {
     color: #fffffe !important;
@@ -57,10 +66,11 @@ h1.title_top {
 .top-bottom {
     margin: 1em 0;
 }
-.col{
+.col {
     display: flex;
     flex-flow: column;
 }
+
 .dropdown-text {
     font-size: 3em;
     -webkit-text-stroke-width: 0.5px;
@@ -84,4 +94,17 @@ h1.title_top {
     background-color: #fffffe !important;
     border-radius: 4px !important;
 }
-
+.full {
+    width: 100%;
+}
+.cover_container {
+    padding: 1vw;
+    background-color: #00000042;
+    border-radius: 4px;
+    max-width: 100%;
+    box-shadow: 1px 5px 17px #0009;
+}
+/* overrides from Semantic */
+.ui.secondary.pointing.menu {
+    border-bottom: 2px solid var(--gold);
+}

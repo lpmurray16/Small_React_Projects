@@ -31,7 +31,7 @@ const Translate = () => {
   const [text, setText] = useState("");
 
   return (
-    <div>
+    <div className="cover_container">
       <div className="ui form">
         <div className="field">
           <label className="color-white">Enter Text:</label>
