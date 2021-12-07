@@ -1,5 +1,5 @@
 import React from "react";
-import "./ImageList.css";
+import "../styles/ImageList.css";
 
 class SearchBar extends React.Component {
   state = { term: "" };
