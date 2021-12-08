@@ -56,9 +56,6 @@ export default () => {
     const [selected, setSelected] = useState(options[0]);
     const [showDropdown, setShowDropdown] = useState(true);
 
-    // this is our state variable to handle routing
-    const [path, setPath] = useState("/");
-
     // final JSX returned from App.js which includes and uses all components within this application.
     // displayed through Routing without React Router
     return (
