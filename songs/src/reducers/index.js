@@ -3,10 +3,14 @@ import { combineReducers } from "redux";
 
 const songsReducer = () => {
     return [
-        { title: "Holiday", duration: "4:05" },
-        { title: "Hey, Jude", duration: "3:34" },
-        { title: "Yesterday", duration: "4:25" },
-        { title: "Help!", duration: "3:55" },
+        { title: "Holiday", duration: "4:05", artist: "Green Day" },
+        { title: "Hey, Jude", duration: "3:34", artist: "The Beatles" },
+        { title: "Hello Hello Hello", duration: "4:25", artist: "Remi Wolf" },
+        {
+            title: "Hypotheticals",
+            duration: "3:55",
+            artist: "Lake Street Dive",
+        },
     ];
 };
 
