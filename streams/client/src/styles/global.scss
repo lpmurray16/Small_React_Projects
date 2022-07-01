@@ -1,0 +1,56 @@
+// global stylesheet
+// reset
+$primary-color: #d88c29;
+$secondary-color: #4fbfce;
+$background-color: #ffebee;
+$black-color: rgb(8, 8, 8);
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: $background-color;
+}
+img {
+    max-width: 100%;
+}
+.image-container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 1em auto;
+}
+a {
+    text-decoration: none;
+    color: $primary-color;
+    &:hover {
+        color: $secondary-color;
+    }
+}
+a.bttn {
+    background-color: $primary-color;
+    color: $background-color;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    &:hover {
+        background-color: $secondary-color;
+        color: $black-color;
+    }
+}
+button {
+    background-color: $primary-color;
+    color: $background-color;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover {
+        background-color: $secondary-color;
+        color: $black-color;
+    }
+}

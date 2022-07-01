@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  background-color: #ffebee;
+}
+
+img {
+  max-width: 100%;
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 1em auto;
+}
+
+a {
+  text-decoration: none;
+  color: #d88c29;
+}
+a:hover {
+  color: #4fbfce;
+}
+
+a.bttn {
+  background-color: #d88c29;
+  color: #ffebee;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+a.bttn:hover {
+  background-color: #4fbfce;
+  color: rgb(8, 8, 8);
+}
+
+button {
+  background-color: #d88c29;
+  color: #ffebee;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #4fbfce;
+  color: rgb(8, 8, 8);
+}/*# sourceMappingURL=global.css.map */
