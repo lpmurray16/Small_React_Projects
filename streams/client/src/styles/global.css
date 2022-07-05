@@ -3,13 +3,29 @@
 }
 
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 16px;
-  background-color: #ffebee;
+  background-color: #0a0a0a;
+  color: rgb(255, 255, 255);
 }
 
 img {
   max-width: 100%;
+}
+
+#logo {
+  margin-right: 1em;
+  width: 60px;
+  height: 60px;
+}
+
+.logo__title {
+  font-size: 1.5em;
+}
+
+.header__logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-container {
@@ -19,17 +35,19 @@ img {
   margin: 1em auto;
 }
 
-a {
+a,
+.header__link {
   text-decoration: none;
   color: #d88c29;
 }
-a:hover {
+a:hover,
+.header__link:hover {
   color: #4fbfce;
 }
 
 a.bttn {
   background-color: #d88c29;
-  color: #ffebee;
+  color: #0a0a0a;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -41,7 +59,7 @@ a.bttn:hover {
 
 button {
   background-color: #d88c29;
-  color: #ffebee;
+  color: #0a0a0a;
   border: none;
   padding: 10px;
   border-radius: 5px;
