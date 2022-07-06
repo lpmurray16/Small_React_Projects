@@ -1,10 +1,13 @@
-// global stylesheet
-// reset
-$primary-color: #d88c29;
-$secondary-color: #4fbfce;
+// global stylesheet, just easier that way
+// with some reset on defaults
+$font-secondary: "Press Start 2P", cursive;
+$primary-color: #6ba7ff;
+$secondary-color: #7dd5f4;
+$tertiary-color: #98f9ff;
 $background-color: #0a0a0a;
-$black-color: rgb(8, 8, 8);
-$white-color: rgb(255, 255, 255);
+$black-color: #0a0a0a;
+$white-color: #fffffe;
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
     box-sizing: border-box;
 }
@@ -18,12 +21,14 @@ img {
     max-width: 100%;
 }
 #logo {
-    margin-right: 1em;
-    width: 60px;
-    height: 60px;
+    margin: 1em;
+    width: 40px;
+    height: 40px;
 }
 .logo__title {
     font-size: 1.5em;
+    font-family: $font-secondary;
+    padding-top: 5px;
 }
 .header__logo-container {
     display: flex;
@@ -36,20 +41,34 @@ img {
     padding: 0;
     margin: 1em auto;
 }
-a,
-.header__link {
+a {
     text-decoration: none;
     color: $primary-color;
     &:hover {
         color: $secondary-color;
     }
 }
+.header__link {
+    text-decoration: none;
+    color: $primary-color;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    &--right {
+        margin: 0 0.5em;
+    }
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
 a.bttn {
     background-color: $primary-color;
-    color: $background-color;
+    color: $white-color;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
+    transition: all 0.2s ease-in-out;
     &:hover {
         background-color: $secondary-color;
         color: $black-color;
@@ -57,12 +76,13 @@ a.bttn {
 }
 button {
     background-color: $primary-color;
-    color: $background-color;
+    color: $white-color;
     border: none;
     padding: 10px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
     &:hover {
         background-color: $secondary-color;
         color: $black-color;

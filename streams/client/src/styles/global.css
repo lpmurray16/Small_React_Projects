@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -5,7 +6,7 @@
 body {
   font-size: 16px;
   background-color: #0a0a0a;
-  color: rgb(255, 255, 255);
+  color: #fffffe;
 }
 
 img {
@@ -13,13 +14,15 @@ img {
 }
 
 #logo {
-  margin-right: 1em;
-  width: 60px;
-  height: 60px;
+  margin: 1em;
+  width: 40px;
+  height: 40px;
 }
 
 .logo__title {
   font-size: 1.5em;
+  font-family: "Press Start 2P", cursive;
+  padding-top: 5px;
 }
 
 .header__logo-container {
@@ -35,38 +38,52 @@ img {
   margin: 1em auto;
 }
 
-a,
+a {
+  text-decoration: none;
+  color: #6ba7ff;
+}
+a:hover {
+  color: #7dd5f4;
+}
+
 .header__link {
   text-decoration: none;
-  color: #d88c29;
+  color: #6ba7ff;
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
-a:hover,
+.header__link--right {
+  margin: 0 0.5em;
+}
 .header__link:hover {
-  color: #4fbfce;
+  color: #7dd5f4;
 }
 
 a.bttn {
-  background-color: #d88c29;
-  color: #0a0a0a;
+  background-color: #6ba7ff;
+  color: #fffffe;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
+  transition: all 0.2s ease-in-out;
 }
 a.bttn:hover {
-  background-color: #4fbfce;
-  color: rgb(8, 8, 8);
+  background-color: #7dd5f4;
+  color: #0a0a0a;
 }
 
 button {
-  background-color: #d88c29;
-  color: #0a0a0a;
+  background-color: #6ba7ff;
+  color: #fffffe;
   border: none;
   padding: 10px;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 button:hover {
-  background-color: #4fbfce;
-  color: rgb(8, 8, 8);
+  background-color: #7dd5f4;
+  color: #0a0a0a;
 }/*# sourceMappingURL=global.css.map */
